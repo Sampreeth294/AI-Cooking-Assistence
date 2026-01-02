@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Cooking Assistant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">🍳 Smart Cooking Assistant</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+
+    <div class="text-center mb-4">
+        <h1>Find Recipes Instantly</h1>
+        <p class="text-muted">
+            Enter ingredients you have or the dish you want to cook
+        </p>
+    </div>
+
+    <div class="card shadow p-4">
+        <div class="mb-3">
+            <label class="form-label">Enter Ingredients</label>
+            <input type="text" id="ingredients" class="form-control"
+                   placeholder="e.g. tomato, onion, potato">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Search by Dish Name</label>
+            <input type="text" id="dishName" class="form-control"
+                   placeholder="e.g. Paneer Butter Masala">
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary px-4" onclick="searchRecipe()">
+                Suggest Recipes
+            </button>
+        </div>
+    </div>
+
+    <div id="result" class="row mt-4"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
